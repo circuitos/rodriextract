@@ -1,0 +1,15 @@
+# Windows scripts must have CRLF line endings: cmd.exe can misread labels (goto/call) in LF files,
+# and old Notepad shows LF text files as one long line.
+*.cmd   text eol=crlf
+*.ps1   text eol=crlf
+*.txt   text eol=crlf
+*.md    text eol=lf
+.gitattributes text eol=lf
+.gitignore     text eol=lf
+LICENSE        text eol=lf
+
+# Binary files - never touch
+*.exe binary
+*.dll binary
+*.pdf binary
+*.zip binary
